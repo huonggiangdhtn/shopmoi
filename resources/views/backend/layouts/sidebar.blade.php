@@ -7,6 +7,13 @@
                 <div class="side-menu__title"> Dashboard </div>
             </a>
         </li>
+        <li>
+            <a href="{{route('admin.comment.index')}}" class="side-menu {{$active_menu=='comment_list'||$active_menu=='comment_add'?'side-menu--active':''}}">
+                <div class="side-menu__icon"> <i data-lucide="package"></i> </div>
+                <div class="side-menu__title"> Bình luận</div>
+            </a>
+
+        </li>
 
         <!-- Blog -->
         <li>
