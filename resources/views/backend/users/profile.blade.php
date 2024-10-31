@@ -8,7 +8,6 @@
 @section('content')
 
 <div class = 'content'>
-@include('backend.layouts.notification')
     <div class="intro-y flex items-center mt-8">
         <h2 class="text-lg font-medium mr-auto">
             Điều chỉnh thông tin cá nhân
@@ -17,7 +16,7 @@
     <div class="grid grid-cols-12 gap-12 mt-5">
         <div class="intro-y col-span-12 lg:col-span-12">
             <!-- BEGIN: Form Layout -->
-            <form method="post" action="{{route('user.profileupdate' )}}">
+            <form method="post" action="{{route('admin.user.profileupdate' )}}">
                 @csrf
                 
                 <div class="intro-y box p-5">

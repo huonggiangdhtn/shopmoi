@@ -47,6 +47,7 @@ Route::group( ['prefix'=>'admin/','middleware'=>'admin.auth', 'as'=>'admin.'],fu
    
     /// Setting  section
     Route::resource('setting', \App\Http\Controllers\SettingController::class);
+    
        
     /////file upload/////////
 

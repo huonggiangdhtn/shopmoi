@@ -20,7 +20,7 @@ class SettingController extends Controller
     public function __construct( )
     {
         $this->pagesize = env('NUMBER_PER_PAGE','20');
-        $this->middleware('admin.auth');
+        $this->middleware('auth');
     }
       
     
@@ -73,7 +73,7 @@ class SettingController extends Controller
             $breadcrumb = '
             <li class="breadcrumb-item"><a href="#">/</a></li>
              ';
-            return view('backend.admin.setting.edit',compact('breadcrumb','setting','active_menu' ));
+            return view('backend.setting.edit',compact('breadcrumb','setting','active_menu' ));
     
         }
        
@@ -102,11 +102,11 @@ class SettingController extends Controller
         $data = $request->all();
         if(!$data['logo'])
         {
-            $data['logo'] = asset('backend/images/profile-6.jpg');
+            $data['logo'] = asset('backend/assets/dist/images/profile-6.jpg');
         }
         $status = $setting->fill($data)->save();
         if($status){
-            return redirect()->route('admin.admin.setting.edit',1);
+            return redirect()->route('admin.setting.edit',1);
         }
         else
         {
