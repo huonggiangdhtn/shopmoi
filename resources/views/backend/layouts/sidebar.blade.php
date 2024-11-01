@@ -136,8 +136,29 @@
                         <div class="side-menu__title"> Thông tin công ty</div>
                     </a>
                 </li>
-
-
+                <li>
+                    <a href="javascript:;" class="side-menu {{($active_menu=='banner_list'||$active_menu=='banner_add')?'side-menu--active':''}}">
+                        <div class="side-menu__icon"> <i data-lucide="image"></i> </div>
+                        <div class="side-menu__title">
+                            Banner
+                            <div class="side-menu__sub-icon transform"> <i data-lucide="chevron-down"></i> </div>
+                        </div>
+                    </a>
+                    <ul class="{{($active_menu=='banner_list'||$active_menu=='banner_add')?'side-menu__sub-open':''}}">
+                        <li>
+                            <a href="{{route('admin.banner.index')}}" class="side-menu {{$active_menu=='banner_list'?'side-menu--active':''}}">
+                                <div class="side-menu__icon"> <i data-lucide="image"></i> </div>
+                                <div class="side-menu__title">Danh sách banner</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.banner.create')}}" class="side-menu {{$active_menu=='banner_add'?'side-menu--active':''}}">
+                                <div class="side-menu__icon"> <i data-lucide="plus"></i> </div>
+                                <div class="side-menu__title"> Thêm banner</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </li>
 
