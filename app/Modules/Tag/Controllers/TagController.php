@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use App\Modules\TagBlog\Models\TagBlog;
+use App\Modules\Tag\Models\TagBlog;
 use App\Modules\Tag\Models\Tag;
-use App\Modules\TagProduct\Models\TagProduct;
+use App\Modules\Tag\Models\TagProduct;
 
 class TagController extends Controller
 {
