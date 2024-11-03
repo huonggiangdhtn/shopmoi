@@ -9,8 +9,6 @@
 <script src="{{ asset('/js/js/tom-select.complete.min.js') }}"></script>
 @endsection
 @section('content')
-
-<div class = 'content'>
     <div class="intro-y flex items-center mt-8">
         <h2 class="text-lg font-medium mr-auto">
             Thêm bình luận
@@ -50,7 +48,6 @@
             </form>
         </div>
     </div>
-</div>
 @endsection
 
 @section ('scripts')

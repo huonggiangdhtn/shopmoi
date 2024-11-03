@@ -1,7 +1,5 @@
 @extends('backend.layouts.master')
 @section('content')
-
-<div class="content">
     <h2 class="intro-y text-lg font-medium mt-10">
         Kết quả tìm kiếm tag
     </h2>
@@ -81,7 +79,6 @@
            
         </div>
         <!-- END: Pagination -->
-</div>
 @endsection
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
