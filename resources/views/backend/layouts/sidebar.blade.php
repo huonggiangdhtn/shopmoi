@@ -184,6 +184,30 @@
                 </li>
             </ul>
         </li>
+                <!-- Quản lí kho -->
+                <li>
+            <a href="javascript:;" class="side-menu {{($active_menu == 'wh_list' || $active_menu == 'wh_add') ? 'side-menu--active' : ''}}">
+                <div class="side-menu__icon"> <i data-lucide="box"></i> </div>
+                <div class="side-menu__title">
+                    Quản lí kho
+                    <div class="side-menu__sub-icon transform"> <i data-lucide="chevron-down"></i> </div>
+                </div>
+            </a>
+            <ul class="{{($active_menu == 'wh_list' || $active_menu == 'wh_add') ? 'side-menu__sub-open' : ''}}">
+                <li>
+                    <a href="{{route('admin.warehouse.index')}}" class="side-menu {{$active_menu == 'wh_list' ? 'side-menu--active' : ''}}">
+                        <div class="side-menu__icon"> <i data-lucide="list"></i> </div>
+                        <div class="side-menu__title">Danh sách kho</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{route('admin.warehouse.create')}}" class="side-menu {{$active_menu == 'wh_add' ? 'side-menu--active' : ''}}">
+                        <div class="side-menu__icon"> <i data-lucide="plus"></i> </div>
+                        <div class="side-menu__title">Thêm kho</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
         <!-- setting menu -->
         <li>
